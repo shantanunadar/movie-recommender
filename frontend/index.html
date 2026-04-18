@@ -1,0 +1,36 @@
+<!-- frontend/index.html -->
+<!doctype html>
+<html>
+  <head>
+    <title>Hybrid Movie Recommender</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>🎬 Hybrid Movie Recommender</h1>
+
+    <div class="controls">
+      <label
+        >User ID: <input type="number" id="userId" value="1" min="1" max="943"
+      /></label>
+
+      <label>
+        CF Weight (alpha): <span id="alphaVal">0.6</span>
+        <input
+          type="range"
+          id="alpha"
+          min="0"
+          max="1"
+          step="0.1"
+          value="0.6"
+          oninput="document.getElementById('alphaVal').textContent = this.value"
+        />
+      </label>
+
+      <button onclick="getRecommendations()">Get Recommendations</button>
+    </div>
+
+    <div id="results"></div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
