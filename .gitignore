@@ -1,0 +1,14 @@
+# Models
+models/
+
+# Dataset
+data/
+
+# Python
+__pycache__/
+*.pyc
+.env
+venv/
+
+# OS
+.DS_Store
