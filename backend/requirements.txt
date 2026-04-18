@@ -1,0 +1,6 @@
+fastapi
+uvicorn[standard]
+pandas
+numpy<2.0
+scikit-surprise
+lightfm
